@@ -1,0 +1,23 @@
+:root {
+  --mainGoldCrayola: #dbc184;
+  --mainViolet: #8113b0;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainBlue: #bdf2e2;
+  --mainMaize: #facd64;
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  /* font-family: "Arvo", serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Cedarville Cursive", cursive;
+  background: var(--mainGoldCrayola);
+  color: var(--mainBlack);
+}
+
+/* #skills {
+    padding: 200px 0 !important; 
+} */
+
+/* use !important to overwrite premade in bootstrap (py-5) */
