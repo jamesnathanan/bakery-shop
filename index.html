@@ -35,53 +35,69 @@
 <body>
     <!-- header section -->
     <header id="header">
-        <nav class="navbar navbar-expand-lg px-4 navbar-dark">
+        <nav class="navbar navbar-expand-lg px-4 ">
             <!-- https://www.iconfinder.com/icons/3465569/cake_dessert_fastfood_food_meal_slice_sweet_icon
             Creative commons (attribution 3.0 unported) -->
             <a href="#" class="navbar-brand mx-2 text-center">
-                <img src="./img/3465569_cake_dessert_fastfood_food_meal_icon.svg" alt="main icons" style="height: 100px; width: 100px;" id="logo">
-                <div class="text-center">
+                <img src="./img/3465569_cake_dessert_fastfood_food_meal_icon.svg" alt="main icons" style="height: 2.5rem; width: 2.5rem;" id="logo">
+                <div class="text-center mt-1 text-white" id="shopname">
                     <small>The Bakery Shop</small>
                 </div>
             </a>
-            <button type="button" class="navbar-toggler" data-toggler="collapse" data-target="#myNavbar">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
                 <span class="toggler-icon">
                     <i class="fas fa-bars"></i>
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav mx-auto text-capitalize">
-                    <li class="nav-item active"><a href="#header" class="nav-link mx-1 lead">home</a></li>
-                    <li class="nav-item "><a href="#about" class="nav-link mx-1 lead">about us</a></li>
-                    <li class="nav-item "><a href="#store" class="nav-link mx-1 lead">store</a></li>
-                    <li class="nav-item "><a href="#services" class="nav-link mx-1 lead">services</a></li>
-                    <li class="nav-item "><a href="#cakes" class="nav-link mx-1 lead">order</a></li>
+                <ul class="navbar-nav mx-auto text-capitalize mt-5 mt-lg-auto">
+                    <li class="nav-item active"><a href="#header" class="nav-link mx-3 lead">home</a></li>
+                    <li class="nav-item "><a href="#about" class="nav-link mx-3 lead">about</a></li>
+                    <li class="nav-item "><a href="#store" class="nav-link mx-3 lead">store</a></li>
+                    <li class="nav-item "><a href="#services" class="nav-link mx-3 lead">services</a></li>
+                    <li class="nav-item "><a href="#cakes" class="nav-link mx-3 lead">order</a></li>
                 </ul>
-                <div class="nav-info-items d-none d-lg-flex text-white">
+                <div class="nav-info-items d-none d-lg-flex text-gold">
                     <!-- single info -->
-                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
-                        <span class="info-icon mx-lg-3">
+                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-3">
+                        <span class="info-icon mx-lg-1">
                             <i class="fas fa-phone"></i>
                         </span>
                         <p class="mb-0">+66 61 350 5000</p>
                     </div>
                     <!-- end of single info -->
-                    <div id="cart-info" class="cart-info nav-info d-flex align-items-center justify-content-between mx-lg-5">
-                        <span class="cart-info__icon mr-lg-3">
+                    <div id="cart-info" class="cart-info nav-info d-flex align-items-center justify-content-between mx-lg-3">
+                        <span class="cart-info__icon mr-lg-1">
                             <i class="fas fa-shopping-cart"></i>
-                            <p class="mb-0 text-capitalize">
-                                <span id="item-count">2</span>
-                                items - $
-                                <span class="item-total">
-                                    10.49
-                                </span>
-                            </p>
                         </span>
+                        <p class="mb-0 text-capitalize">
+                            <span id="item-count">2</span>
+                            items - $
+                            <span class="item-total">
+                                10.49
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
         
         </nav>
+        <!-- end of nav -->
+        <!-- banner -->
+        <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+                <div class="col-10 mx-auto text-center banner">
+                    <h1 class="text-capitalize text-gold">
+                        welcome to <strong class="banner-title font-cursive">The Bakery Shop</strong>
+                    </h1>
+                    <a href="#store" class="btn banner-link my-2 text-uppercase">more</a>
+                    <!-- Photo by Maria Orlova from Pexels -->
+                </div>
+                <!-- store -->
+
+            </div>
+        </div>
+        <!-- end of banner -->
     </header>
     <!-- end of header section -->
 
