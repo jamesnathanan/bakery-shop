@@ -10,8 +10,8 @@
 
 body {
   /* font-family: "Arvo", serif; */
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: "Cedarville Cursive", cursive;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Cedarville Cursive", cursive; */
   background: var(--mainViolet);
   color: var(--mainBlack);
 }
@@ -27,6 +27,85 @@ body {
 /* use !important to overwrite premade in bootstrap (py-5) */
 
 #logo {
-  -webkit-filter: invert(1); /* safari 6.0 - 9.0 */
-  filter: invert(1);
+  /* -webkit-filter: invert(1); 
+  filter: invert(1); */
+}
+#logo:hover {
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainGoldCrayola);
+}
+
+.nav-link {
+  color: var(--mainGoldCrayola);
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+.nav-link:hover {
+  color: var(--mainBlue);
+  transform: scale(1.05);
+}
+
+.font-cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+#shopname {
+  color: var(--mainGoldCrayola) !important;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.text-gold {
+  color: var(--mainGoldCrayola) !important;
+}
+
+/* cart style */
+.cart-info__icon {
+  cursor: pointer;
+}
+.cart-info,
+.nav-info {
+  border: 0.05rem solid var(--mainGoldCrayola);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.cart-info:hover,
+.nav-info:hover {
+  color: var(--mainViolet);
+  background: var(--mainBlue);
+  border-color: var(--mainBlue);
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainGoldCrayola);
+}
+.nav-info:hover .info-icon {
+  color: var(--mainGoldCrayola);
+}
+
+.max-height {
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(57, 35, 59, 0.6),
+      rgba(241, 115, 199, 0.3)
+    ),
+    url("../img/pexels-maria-orlova-4913399.jpg");
+  /* Photo by Maria Orlova from Pexels */
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  color: var(--mainMaize);
 }
