@@ -6,6 +6,7 @@
   --mainBlue: #bdf2e2;
   --mainMaize: #facd64;
   --mainGrey: rgb(238, 238, 238);
+  --mainPink: rgb(250, 128, 149);
 }
 
 body {
@@ -14,6 +15,43 @@ body {
   /* font-family: "Cedarville Cursive", cursive; */
   background: var(--mainViolet);
   color: var(--mainBlack);
+}
+
+/* global styles */
+.text-gold {
+  color: var(--mainGoldCrayola) !important;
+}
+.font-cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+.btn-pink {
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
+}
+.btn-pink:hover {
+  color: var(--mainBlack) !important;
+  background: var(--mainPink) !important;
+}
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+  color: var(--mainViolet) !important;
+  background: var(--mainGrey) !important;
+}
+.btn-gold {
+  border-color: var(--mainGoldCrayola) !important;
+  color: var(--mainGoldCrayola) !important;
+  border: 0.1rem solid var(--mainMaize);
+  transition: all 0.5s ease-in-out;
+}
+.btn-gold:hover {
+  background: var(--mainViolet);
+  border-color: var(--mainViolet);
+  color: var(--mainWhite);
+  transform: scaleX(1.15) scaleY(1.05);
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-info {
@@ -29,10 +67,11 @@ body {
 #logo {
   /* -webkit-filter: invert(1); 
   filter: invert(1); */
+  transition: transform 0.5s ease-in-out;
 }
 #logo:hover {
-  transform: scale(1.02);
-  transition: transform 0.5s ease;
+  transform: scale(1.12) rotate(-10deg);
+  transition: transform 0.5s ease-in-out;
 }
 
 .navbar-toggler {
@@ -54,17 +93,9 @@ body {
   transform: scale(1.05);
 }
 
-.font-cursive {
-  font-family: "Cedarville Cursive", cursive;
-}
-
 #shopname {
   color: var(--mainGoldCrayola) !important;
   font-family: "Cedarville Cursive", cursive;
-}
-
-.text-gold {
-  color: var(--mainGoldCrayola) !important;
 }
 
 /* cart style */
@@ -95,17 +126,79 @@ body {
 }
 
 .max-height {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: calc(100vh - 76px);
   background: linear-gradient(
       to bottom,
-      rgba(57, 35, 59, 0.6),
-      rgba(241, 115, 199, 0.3)
+      rgba(34, 18, 36, 0.95),
+      rgba(65, 17, 49, 0.7)
     ),
     url("../img/pexels-maria-orlova-4913399.jpg");
   /* Photo by Maria Orlova from Pexels */
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .banner-title {
   font-size: 3.5rem;
-  color: var(--mainMaize);
+  color: var(--mainViolet);
+}
+.banner-title2 {
+  font-size: 3.5rem;
+  color: var(--mainGoldCrayola);
+}
+.banner {
+  margin-top: -6rem;
+}
+.banner-link {
+  font-size: 1.4rem;
+}
+/* .banner-link:hover {
+  background: var(--mainViolet);
+  border-color: var(--mainViolet);
+  color: var(--mainWhite);
+  transform: scaleX(1.15) scaleY(1.05);
+  transition: all 0.5s ease-in-out;
+} */
+.banner:hover .cake {
+  transform: rotate(-10deg) scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.cake {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.cake:hover {
+  transform: rotate(-10deg) scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.hand-cake {
+  max-width: auto;
+  max-height: 10%;
+}
+/* About section */
+.about-img__container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainGoldCrayola);
+  z-index: -1;
+  opacity: 0.7;
+  transition: all 0.7s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
 }
