@@ -106,22 +106,184 @@
             <div class="row align-items-center">
                 <!-- first column -->
                 <div class="col-10 mx-auto col-md-6 my-5">
-                    <h1 class="text-capitalize font-cursive">about <strong class="banner-title2 font-cursive">us</strong></h1>
-                    <p class="my-4 text-gold w-75 lead my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, exercitationem, ipsa similique reiciendis temporibus dolore vel, harum nesciunt quia qui nulla voluptatum excepturi dignissimos autem. Dicta repellat velit rerum temporibus repellendus minima veniam praesentium, cum fugit quos, unde in culpa quod aperiam molestiae voluptas vel. Vero nihil atque et nemo?</p>
-                    <a href="#" class="btn text-uppercase my-5 btn-black">explore</a>
+                    <h1 class="text-capitalize font-cursive ml-3 ml-md-0 pl-md-5">about <strong class="banner-title2 font-cursive">us</strong></h1>
+                    <p class="my-4 text-gold w-75 lead my-4 ml-3 ml-md-0 pl-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, exercitationem, ipsa similique reiciendis temporibus dolore vel, harum nesciunt quia qui nulla voluptatum excepturi dignissimos autem. Dicta repellat velit rerum temporibus repellendus minima veniam praesentium, </p>
+                    <a href="#" class="btn text-uppercase my-5 btn-black ml-3 ml-md-0 ml-md-5">explore</a>
                 </div>
                 <!-- second column to place image -->
                 <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
-                    <div class="about-img__container">
-                        <img src="./img/pexels-tijana-drndarski-3338681.jpg" alt="bakery" class="img-fluid hand-cake">
-                        <!-- Photo by Tijana Drndarski from Pexels -->
+                    <!-- i add sub col to test if i can reduc img size this way -->
+                    <div class="col-10 col-md-6 my-0 mx-auto align-self-center">
+
+                        <div class="about-img__container">
+                            <img src="./img/pexels-tijana-drndarski-3338681.jpg" alt="bakery" class="img-fluid">
+                            <!-- Photo by Tijana Drndarski from Pexels -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end of about section -->
+    <!-- store section -->
+    <section class="store py-5" id="store">
+        <div class="container">
+            <!-- section title -->
+            <div class="row">
+                <div class="mx-auto text-center col-10 col-sm-6">
+                    <h1 class="text-capitalize font-cursive">our <strong class="banner-title2 font-cursive">store</strong></h1>
+                </div>
+            </div>
+            <!-- end of section title -->
+            <!-- filter buttons -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+                    <a href="#" class="btn btn-black m-2 text-uppercase filter-btn" data-filter="all">all</a>
+                    <a href="#" class="btn btn-black m-2 text-uppercase filter-btn" data-filter="all">cakes</a>
+                    <a href="#" class="btn btn-black m-2 text-uppercase filter-btn" data-filter="all">cupcakes</a>
+                    <a href="#" class="btn btn-black m-2 text-uppercase filter-btn" data-filter="all">sweets</a>
+                    <a href="#" class="btn btn-black m-2 text-uppercase filter-btn" data-filter="all">doughnuts</a>
+                </div>
+            </div>
+            <!-- end of filter buttons -->
+            <!-- search box -->
+            <div class="row">
+                <div class="col-10 col-md-6 mx-auto">
+                    <form>
+                        <div class="input-group mb-3 mt-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text search-box" id="search-icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" id="search-item" placeholder="items...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End of search box -->
+            <!-- Store items -->
+            <div class="row store-items" id="store-items">
+                <!-- single item  -->
+                <!-- item 1 -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets ">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="./img/pexels-foodie-factor-539447.jpg" alt="sweets" class="card-img-top store-img">
+                            <!-- Photo by Foodie Factor from Pexels -->
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text text-capitalize d-flex justify-content-between">
+                                <h5 id="store-item-name"> sweet item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">0.1</strong></h5>
 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item  -->
+                
+                
+                <!-- item 2  Custom crop img method-->
+                <!-- <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cupcakes">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <div class="crop card-img-top">
+                                <img src="./img/pexels-tim-douglas-6210739.jpg" alt="cupcakes" class="store-img">
+                            </div>
+                            
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text text-capitalize d-flex justify-content-between">
+                                <h5 id="store-item-name"> sweet item</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">0.1</strong></h5>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- single item -->
+                <!-- item 2 try to custom size by ghosting img method-->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cakes">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="./img/pexels-foodie-factor-539447.jpg" alt="ghost img" class="card-img-top store-img ghost">
+                            <img src="./img/pexels-chudesabyvaut-2612373.jpg" alt="cakes" class="ghost-img2 store-img card-img-top">
+                            
+                            <!-- Photo by chudesabyvaut from Pexels -->
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text text-capitalize d-flex justify-content-between">
+                                <h5 id="store-item-name"> cakes</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">12</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item  -->
+                
+                <!-- single item -->
+                <!-- item 3 try to custom size by ghosting img method-->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cupcakes">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="./img/pexels-foodie-factor-539447.jpg" alt="ghost img" class="card-img-top store-img ghost">
+                            <!-- Photo by Foodie Factor from Pexels -->
+                            <img src="./img/pexels-tim-douglas-6210739.jpg" alt="cupcakes" class="ghost-img store-img card-img-top">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text text-capitalize d-flex justify-content-between">
+                                <h5 id="store-item-name"> cupcakes</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item  -->
+                <!-- single item -->
+                <!-- item 4 -->
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="doughnuts">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="./img/pexels-tima-miroshnichenko-7034526.jpg" alt="doughnuts" class="card-img-top store-img">
+                            <!-- Photo by Tima Miroshnichenko from Pexels -->
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text text-capitalize d-flex justify-content-between">
+                                <h5 id="store-item-name"> doughnuts</h5>
+                                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">3</strong></h5>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single item  -->
+                
+
+            </div>
+            <!-- End of store items -->
+        </div>
+    </section>
+    <!-- End of store section -->
     <!-- jQuery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
