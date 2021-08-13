@@ -53,6 +53,9 @@ body {
   transform: scaleX(1.15) scaleY(1.05);
   transition: all 0.5s ease-in-out;
 }
+.bg-maize {
+  background: var(--mainMaize);
+}
 
 .nav-info {
   font-family: "Montserrat", sans-serif;
@@ -279,4 +282,50 @@ body {
   position: absolute;
   top: -70%;
   left: 0;
+}
+
+.service-icon {
+  filter: invert(83%) sepia(25%) saturate(509%) hue-rotate(2deg) brightness(90%)
+    contrast(92%);
+}
+
+.doughnut-icon {
+  transform: scale(0.7);
+}
+
+/* services section */
+/* Photo by iSAW Company from Pexels */
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(../img/pexels-isaw-company-1005406.jpg) center/cover fixed no-repeat;
+}
+
+.service-title {
+  letter-spacing: 0.5rem;
+}
+.service-text {
+  word-spacing: 0.3rem;
+}
+
+/* footer  */
+.footer-contact {
+  background: var(--mainBlack);
+  color: var(--mainPink);
+}
+.footer-icon {
+  font-size: 1.5rem;
+  color: var(--mainMaize);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.footer-icon:hover {
+  color: var(--mainPink);
+}
+
+.footer-icon0 {
+  color: var(--mainViolet);
+  transition: all 0.4s ease-in-out;
+}
+.footer-icon0:hover {
+  color: var(--mainGrey);
 }
